@@ -10,7 +10,7 @@ body {
 
 .dashboard {
     display: grid;
-    grid-template-columns: .8fr 3fr; /* Sidebar 0.8 fraction, main content 3 fractions */
+    grid-template-columns: .9fr 3fr; /* Sidebar 0.8 fraction, main content 3 fractions */
     width: 1459px;
     height: 912px;
 }
@@ -49,7 +49,7 @@ body {
 
 /* styling applied only to the label for the dashboard svg*/
 .sidebar .logo-svg + span {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 /* styling for each svg's label */
