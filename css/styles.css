@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: .8fr 3fr; /* Sidebar 0.8 fraction, main content 3 fractions */
+    width: 1459px;
+    height: 912px;
+}
+
+
+/* Styling for the sidebar and its content */
+.sidebar {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two equal columns */
+    grid-auto-rows: min-content;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 100%; /* Full height of the sidebar */
+    background: #1992D3;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+/* size the empty rows which will be used for custom gaps */
+.custom-gaps {
+    height: 15px; 
+}
+
+.sidebar svg {
+    justify-self: center;
+    /* align-self: center; */
+    height: 30px;
+    fill: #FFFFFF;
+    grid-column: 1; /* Place icon in the first grid column */
+}
+
+.sidebar .logo-svg {
+    height: 60px;
+}
+
+/* styling applied only to the label for the dashboard svg*/
+.sidebar .logo-svg + span {
+    font-size: 35px;
+}
+
+/* styling for each svg's label */
+.sidebar span {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
