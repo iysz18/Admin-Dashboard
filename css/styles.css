@@ -28,7 +28,7 @@ body {
     height: 100%; /* Full height of the dashboard */
     background: #1992D3;
     padding-left: 15px;
-    padding-top: 15px;
+    /* padding-top: 15px; */
 }
 
 /* Custom gap size for spacing */
@@ -116,4 +116,54 @@ svg {
     font-size: 20px;
     font-weight: 600;
     justify-self: center;
+}
+
+
+/* User Profile styling */
+.user-profile {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: ;    
+}
+
+/* Adjust the size of profile icon and bg-color */
+.user-profile svg {
+    height: 70px;
+    fill: #ffa500;
+    grid-row: 1 / 3;
+    align-self: center;
+}
+
+/* Styling for greeting and username */
+.user-profile p {
+    font-weight: 600;
+    margin: 0;
+}
+
+.user-profile .greeting {
+    font-size: 15px;
+}
+
+.user-profile .username {
+    font-size: 25px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+}
+
+/* CSS for the three buttons "New", "Upload" and "Share" */
+.blue-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.blue-buttons .button {
+    background: #1A92D4;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    border-radius: 30px;
 }
