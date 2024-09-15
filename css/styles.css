@@ -27,8 +27,12 @@ body {
     row-gap: 20px;
     height: 100%; /* Full height of the dashboard */
     background: #1992D3;
-    padding-left: 15px;
+    padding-left: 20px;
     /* padding-top: 15px; */
+}
+
+.sidebar::before {
+    content: '';
 }
 
 /* Custom gap size for spacing */
@@ -123,7 +127,6 @@ svg {
 .user-profile {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: ;    
 }
 
 /* Adjust the size of profile icon and bg-color */
@@ -166,4 +169,11 @@ svg {
     padding: 10px 30px;
     color: #FFFFFF;
     border-radius: 30px;
+}
+
+/* Styling the main-content and setting the grid */
+.main-content {
+    background: #E2E8F0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
